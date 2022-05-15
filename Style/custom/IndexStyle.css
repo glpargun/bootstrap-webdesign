@@ -1,0 +1,210 @@
+/* HEADER */
+
+header.bodyPage{
+	background: url(../../Themes/Istanbul/Header/headerImg.jpg) no-repeat center 40%;
+	background-size: cover;
+	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+	border-bottom: 2px solid #15133C;
+
+}
+
+header.bodyPage .onImage-heading{
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+	font-weight: 700;
+	color: whitesmoke;
+	text-align: center;
+	margin-bottom: 1rem;
+
+}
+
+header.bodyPage .noHover{
+	color: black;
+}
+
+header.bodyPage .container .row{
+	font-size: 1em;
+	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+header.bodyPage .container .row p{
+	font-weight: 600;
+}
+
+#mainNavbar{
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+	background: rgb(0, 0, 0, 0.5);
+
+}
+
+#mainNavbar .navbar-brand{
+	color: black;
+	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+	font-family: 900;
+	letter-spacing: 0.063em;
+}
+
+#mainNavbar 
+.navbar-nav
+.nav-item
+.nav-link{
+	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+	font-size: 0.9rem;
+	color: black;
+	letter-spacing: 0.02em;
+}
+
+#mainNavbar .navbar-nav .nav-item .nav-link:hover{
+	color: darkslategray;
+}
+
+.divider:after,
+.divider:before{
+	content: "";
+	flex: 1;
+	height: 1px;
+	background-color: #eee;
+}
+
+.divider p{
+	font-weight: 500px;
+}
+
+.h-custom{
+	height: calc(100%-73px);
+}
+
+/* * login part ** */
+
+.log-modal .modal-dialog{
+	margin: 1rem auto;
+}
+
+.log-modal .modal-content h2{
+	font-size: 1.5rem;
+}
+
+.log-modal .modal-content .p-intro{
+	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+	
+}
+
+.log-modal .close-modal{
+	position: absolute;
+	top:  0.1rem;
+	right: 0.8rem;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.log-modal .close-modal:hover{
+	opacity: 0.5;
+}
+
+
+
+
+
+/* HEADER MEDIA QUERY */
+@media (max-width: 991.98px){
+
+	header.bodyPage{
+		padding-top: 11rem;
+		padding-bottom: 3rem;
+	}
+
+	header.bodyPage .container .row{
+		display: none;
+	}
+
+	header.bodyPage .container .input-group{
+		width: 80vw;
+	}
+
+	#mainNavbar .navbar-nav .nav-item .nav-link{
+		color: black;
+	}
+
+	#mainNavbar .navbar-brand{
+		color: whitesmoke;
+		font-weight: 700;
+	}
+
+	.log-modal .modal-dialog{
+		max-width:90vw;
+	}
+
+
+}
+
+
+@media (min-width: 992px){
+
+	header.bodyPage{
+		padding-top: 13rem;
+		padding-bottom: 3rem;
+	}
+
+	.log-modal .modal-dialog{
+		max-width: 30vw;
+	}
+
+	header.bodyPage .container .input-group{
+		max-width: 40vw;
+	}
+
+	#mainNavbar{
+		padding-top: 0.2rem;
+		padding-bottom: 0.2rem;
+		border: none;
+		background-color: transparent;
+		transition: padding-top 0.5s eas-in-out, padding-bottom 0.5s ease-in-out;
+		-webkit-transition:  padding-top 0.5s eas-in-out, padding-bottom 0.5s ease-in-out;
+		-moz-transition:  padding-top 0.5s eas-in-out, padding-bottom 0.5s ease-in-out;
+		-o-transition: padding-top 0.5s eas-in-out, padding-bottom 0.5s ease-in-out;
+	}
+
+	#mainNavbar .navbar-brand{
+		font-size: 1.6em;
+		font-weight: 700;
+		transition: font-size 0.5s ease-in-out;
+		-webkit-transition:  font-size 0.5s ease-in-out;
+		-moz-transition:  font-size 0.5s ease-in-out;
+		-o-transition:  font-size 0.5s ease-in-out;
+	}
+
+	#mainNavbar .navbar-nav .nav-item{
+		margin-right: 1rem;
+	}
+
+	#mainNavbar .navbar-nav .nav-item:last-child{
+		margin-right: 0;
+	}
+
+	#mainNavbar.navbar-mobile .navbar-brand{
+		font-size: 1.20em;
+		color: whitesmoke;
+	} 
+
+	#mainNavbar.navbar-mobile .navbar-nav .nav-item
+	.nav-link{
+		color: whitesmoke;
+	} 
+
+	#mainNavbar.navbar-mobile .navbar-nav .nav-item
+	.nav-link:hover{
+	color: lightgray;
+	}
+
+	#mainNavbar.navbar-mobile{
+		padding-top: 0.2rem;
+		padding-bottom: 0.2rem;
+		background: rgb(0, 0, 0, 0.5);
+
+	}
+
+
+}
