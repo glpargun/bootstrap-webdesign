@@ -109,18 +109,18 @@ header.bodyPage .container .row p{
 	padding: 2rem 0;
 }
 
-.discoverSection .col-lg-8 h2.dis-heading{
+.discoverSection .col-sm-8 h2.dis-heading{
 	font-size: 1.1rem;
-	font-weight: 650;
+	font-weight: 600;
 	margin-top: 0;
 	margin-bottom: 0.5rem;
 	letter-spacing: 0.02em;
 	text-align: left;
 }
 
-.discoverSection .col-lg-4 h2.dis-heading{
+.discoverSection .col-sm-4 h2.dis-heading{
 	font-size: 1.1rem;
-	font-weight: 650;
+	font-weight: 600;
 	margin-top: 0;
 	margin-bottom: 0.5rem;
 	letter-spacing: 0.02em;
@@ -132,11 +132,13 @@ header.bodyPage .container .row p{
 
 
 /* HEADER MEDIA QUERY */
+
+/* cep size css kodları*/
 @media (max-width: 991.98px){
 
 	header.bodyPage{
-		padding-top: 11rem;
-		padding-bottom: 3rem;
+		padding-top: 5rem;
+		padding-bottom: 2rem;
 	}
 
 	header.bodyPage .container .row{
@@ -161,12 +163,12 @@ header.bodyPage .container .row p{
 		max-width:90vw;
 	}
 
-	section.discoverSection .col-lg-4{
+	section.discoverSection .col-sm-4{
 		display: none;
 		margin: auto;
 	}
 
-	section.discoverSection .col-lg-8{
+	section.discoverSection .col-sm-8{
 		width: 91.5vw;
 		margin: auto;
 		padding: 1rem 0;
@@ -179,8 +181,8 @@ header.bodyPage .container .row p{
 @media (min-width: 992px){
 
 	header.bodyPage{
-		padding-top: 13rem;
-		padding-bottom: 3rem;
+		padding-top: 11rem;
+		padding-bottom: 4rem;
 	}
 
 	.log-modal .modal-dialog{
