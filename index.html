@@ -76,29 +76,39 @@
 
 	<section id="discover" class="discoverSection">
 		<div class="container">
-			<div class="text-center mb-5">
 					<div class="row mx-auto">
 					<div class="col-sm-8 text-start">
 						<h2 class="dis-heading mb-3">Highlights:</h2>
 
-						<button type="button" class="btn btn-outline-dark border mb-2">Highlights</button>
-						<button type="button" class="btn btn-outline-dark border mb-2">Music & Audio</button>
-						<button type="button" class="btn btn-outline-dark border mb-2">Home & Garden</button>
-						<button type="button" class="btn btn-outline-dark border mb-2">Performing Arts</button>
-						<button type="button" class="btn btn-outline-dark border mb-2">Science & Tech</button>
-						<button type="button" class="btn btn-outline-dark border mb-2">Animals & Pets</button>
-						<button type="button" class="btn btn-outline-dark border mb-2">Business & Finance</button>
-						<button type="button" class="btn btn-outline-dark border mb-2">Food & Drink</button>
-						<button type="button" class="btn btn-outline-dark border mb-2">Fashion & Beauty</button>
-						<button type="button" class="btn btn-outline-dark border mb-2">TV & Movies</button>
-						<button type="button" class="btn btn-outline-dark border mb-2">Games</button>
-						<button type="button" class="btn btn-outline-dark border mb-2"><i class="bi bi-three-dots"></i></button>
-						
+						<ul class="nav nav-tabs mx-auto" id="discovertabs" role="tablist">
+							<li class="nav-item" role="presentation"><button type="button" class="btn btn-outline-dark border mb-2 active" id="highlight-tab" data-bs-toggle="tab" data-bs-target="#highlight" role="tab" aria-controls="Highlight" aria-selected="true">Highlights</button></li>
+							<li class="nav-item" role="presentation"><button type="button" class="btn btn-outline-dark border mb-2" id="music-tab" data-bs-toggle="tab" data-bs-target="#music" role="tab" aria-controls="Music and Audio" aria-selected="true">Music & Audio</button></li>
+							<li class="nav-item" role="presentation"><button type="button" class="btn btn-outline-dark border mb-2" id="homeandgarden-tab" data-bs-toggle="tab" data-bs-target="#homeandgarden" role="tab" aria-controls="Home and Garden" aria-selected="true">Home & Garden</button></li>
+							<li class="nav-item d-none" role="presentation"><button type="button" class="btn btn-outline-dark border mb-2">Performing Arts</button></li>
+							<li class="nav-item" role="presentation"><button type="button" class="btn btn-outline-dark border mb-2">Science & Tech</button></li>
+							<li class="nav-item d-none" role="presentation"><button type="button" class="btn btn-outline-dark border mb-2">Animals & Pets</button></li>
+							<li class="nav-item d-none" role="presentation"><button type="button" class="btn btn-outline-dark border mb-2">Business & Finance</button></li>
+							<li class="nav-item d-none" role="presentation"><button type="button" class="btn btn-outline-dark border mb-2">Food & Drink</button></li>
+							<li class="nav-item d-none" role="presentation"><button type="button" class="btn btn-outline-dark border mb-2">Fashion & Beauty</button></li>
+							<li class="nav-item d-none" role="presentation"><button type="button" class="btn btn-outline-dark border mb-2">TV & Movies</button></li>
+							<li class="nav-item" role="presentation"><button type="button" class="btn btn-outline-dark border mb-2">Games</button></li>
+							<li class="nav-item" role="presentation">	<button type="button" class="btn btn-outline-dark border mb-2"><i class="bi bi-three-dots"></i></button></li>
+						</ul>
 
-						<div class="dis-themaDokum">
+						<div class="tab-content" id="discovertabs">
+							<div class="tab-pane fade show active" id="highlight" role="tabpanel" aria-labelledby="highlight-tab">
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis hic natus alias magni labore? Numquam quasi cumque tenetur dolorem, ea eligendi eum itaque omnis ratione libero cupiditate saepe voluptatum voluptatibus?
+							</div>
+
+							<div class="tab-pane fade" id="music" role="tabpanel" aria-labelledby="music-tab">
+								1434645 rhthffgLorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ipsam harum recusandae itaque sunt doloribus excepturi. Pariatur at necessitatibus, ex, perferendis impedit corrupti atque, obcaecati quae inventore dicta unde vel.
+							</div>
+
+							<div class="tab-pane fade" id="homeandgarden" role="tabpanel" aria-labelledby="homeandgarden-tab">
+								gdrrtytrthrLorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ipsam harum recusandae itaque sunt doloribus excepturi. Pariatur at necessitatibus, ex, perferendis impedit corrupti atque, obcaecati quae inventore dicta unde vel.
+							</div>
 
 						</div>
-						
 
 					</div>
 					<div class="col-sm-4 float-right bg-warning text-start">
@@ -109,7 +119,7 @@
 					</div>
 				</div>
 			
-			</div>
+			
 		</div>
 	</section>
 
