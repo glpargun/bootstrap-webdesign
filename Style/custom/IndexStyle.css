@@ -104,6 +104,29 @@ header.bodyPage .container .row p{
 	opacity: 0.5;
 }
 
+/* Discover start */
+.discoverSection{
+	padding: 2rem 0;
+}
+
+.discoverSection .col-lg-8 h2.dis-heading{
+	font-size: 1.1rem;
+	font-weight: 650;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	letter-spacing: 0.02em;
+	text-align: left;
+}
+
+.discoverSection .col-lg-4 h2.dis-heading{
+	font-size: 1.1rem;
+	font-weight: 650;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	letter-spacing: 0.02em;
+	text-align: left;
+}
+
 
 
 
@@ -121,7 +144,8 @@ header.bodyPage .container .row p{
 	}
 
 	header.bodyPage .container .input-group{
-		width: 80vw;
+		width: 75vw;
+		margin: auto;
 	}
 
 	#mainNavbar .navbar-nav .nav-item .nav-link{
@@ -135,6 +159,17 @@ header.bodyPage .container .row p{
 
 	.log-modal .modal-dialog{
 		max-width:90vw;
+	}
+
+	section.discoverSection .col-lg-4{
+		display: none;
+		margin: auto;
+	}
+
+	section.discoverSection .col-lg-8{
+		width: 91.5vw;
+		margin: auto;
+		padding: 1rem 0;
 	}
 
 
@@ -206,5 +241,12 @@ header.bodyPage .container .row p{
 
 	}
 
+	section.discoverSection .col-lg-4{
+		padding: 0.5rem 0;
+	}
+
+	section.discoverSection .col-lg-8{
+		padding: 0.5rem 0;
+	}
 
 }
