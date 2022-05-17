@@ -162,6 +162,15 @@ section.discoverSection .d-flex .btn:hover{
 	
 }
 
+section.discoverSection .col-right .group-name{
+	font-size: 1rem;
+	color: blue;
+}
+
+section.discoverSection .col-right .group-info-dokum{
+	font-size: 0.8rem;
+}
+
 
 
 
