@@ -109,11 +109,15 @@ header.bodyPage .container .row p{
 	padding: 2rem 0;
 }
 
-section.discoverSection .col-8 .nav-item{
+section.discoverSection .container .dis-heading{
+	font-size: 1.1rem;
+}
+
+section.discoverSection .col-special .nav-item{
 	margin-left: 0.3rem;
 }
 
-section.discoverSection .col-8 .nav-item:first-child{
+section.discoverSection .col-special .nav-item:first-child{
 	margin-left: 0;
 }
 
@@ -170,6 +174,17 @@ section.discoverSection .col-right .group-name{
 section.discoverSection .col-right .group-info-dokum{
 	font-size: 0.8rem;
 }
+
+section.discoverSection .col-right a.card-specilization{
+	
+}
+
+section.discoverSection .col-right a.card-specilization:hover{
+	background-color: #F7F5F2;
+}
+
+
+
 
 
 
