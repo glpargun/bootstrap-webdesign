@@ -11,6 +11,7 @@ window.addEventListener("DOMContentLoaded",event=>{
 		}
 	};
 	navbarMobile();
+	
 	document.addEventListener("scroll", navbarMobile);
 	const myNavbar=document.body.querySelector("#mainNavbar");
 	if(myNavbar){

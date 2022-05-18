@@ -43,7 +43,7 @@ header.bodyPage .container .row p{
 #mainNavbar .navbar-brand{
 	color: black;
 	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-	font-family: 900;
+	font-weight: 900;
 	letter-spacing: 0.063em;
 }
 
@@ -175,14 +175,16 @@ section.discoverSection .col-right .group-info-dokum{
 	font-size: 0.8rem;
 }
 
-section.discoverSection .col-right a.card-specilization{
-	
-}
 
 section.discoverSection .col-right a.card-specilization:hover{
 	background-color: #F7F5F2;
 }
 
+
+/*BlankPage Style*/
+.ms-n5 {
+    margin-left: -40px;
+}
 
 
 
@@ -205,9 +207,8 @@ section.discoverSection .col-right a.card-specilization:hover{
 		display: none;
 	}
 
-	header.bodyPage .container .input-group{
-		width: 75vw;
-		margin: auto;
+	.navbar .container .input-search{
+		width: 10vw;
 	}
 
 	#mainNavbar .navbar-nav .nav-item .nav-link{
