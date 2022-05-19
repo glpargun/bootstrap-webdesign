@@ -36,7 +36,7 @@ header.bodyPage .container .row p{
 	padding-top: 0.2rem;
 	padding-bottom: 0.2rem;
 	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-	background: rgb(0, 0, 0, 0.5);
+	background: rgb(0, 0, 0, 0.7);
 
 }
 
@@ -123,7 +123,7 @@ section.discoverSection .col-special .nav-item:first-child{
 
 /** show more part */
 
-section.discoverSection .collapse-default:not(.show){
+.collapse-default:not(.show){
 	display: block;
 	height: 3rem;
 	overflow: hidden;
@@ -132,19 +132,19 @@ section.discoverSection .collapse-default:not(.show){
 	margin-bottom: 0;
 }
 
-section.discoverSection a.collapsed:link, :active, :hover{
+a.collapsed:link, :active, :hover{
 	text-decoration: none;
 	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 	
 }
 
-section.discoverSection a:not(.collapsed):link, :active, :hover{
+a:not(.collapsed):link, :active, :hover{
 	text-decoration: none;
 	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 	
 }
 
-section.discoverSection a.collapsed::after{
+a.collapsed::after{
 	content: 'see more...';
 	font-weight: 700;
 	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
@@ -186,9 +186,137 @@ section.discoverSection .col-right a.card-specilization:hover{
     margin-left: -40px;
 }
 
+#Info-Page .post-specialization{
+	font-size: 1rem;
+	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+#Info-Page .post-info-specialization{
+	font-size: 0.8rem;
+	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+#Info-Page .post-specialization a{
+	text-decoration: none;
+}
+
+#Info-Page .post-specialization a:hover{
+	text-decoration: underline;
+}
+
+/*COMMENT-DETAIL /TIMELINE/ DOKUM*/
+.timeline{
+	position: relative;
+	padding: 0;
+	list-style: none;
+}
+
+.timeline:before{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 22px;
+	width: 1px;
+	margin-left: -1px;
+	content: "";
+	background-color: #dadde0;
+}
+
+.timeline>li{
+	margin-bottom: 20px;
+
+}
+
+.timeline>li:after,
+.timeline>li:before{
+	display: table;
+	content: "";
+}
+
+.timeline>after{
+	clear:both
+}
+
+.timeline>li .t-panel{
+	padding: 0 0px 0 45px;
+	text-align: left;
+}
+
+.timeline>li .t-image{
+	position: absolute;
+	z-index: 10;
+	width: 40px;
+	height: 40px;
+	margin-left: 0;
+	text-align: center;
+	color: white;
+	border: 1px solid #dadde0;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius: 100%;
+	-o-border-radius: 100%;
+}
+
+.timeline>li .t-image:last-child{
+	background-color: green;
+}
+
+.t-comment{
+	margin: 0 20px 0 45px;
+	top: 0;
+	text-align: left;
+}
+
+.t-panel .btn,
+.row .btn{
+	color:black;
+	font-weight: 600;
+	font-size: 1rem;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.t-panel .btn span{
+	font-size: 0.9rem;
+
+}
+
+.t-panel .btn:hover ,
+.row .btn:hover{
+	background-color: lightgray;
+
+}
 
 
+.timeline>li .t-image h4{
+	font-size: 20px;
+	line-height: 10px;
+	margin-top: 11px;
+}
 
+.timeline .t-heading h4{
+	margin-top: 5px;
+	margin-bottom: 3px;
+	color: inherit;
+	font-weight: bold;
+	font-size: 0.9rem;
+	margin-left: -2px;
+	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+.timeline .t-body>ul,
+.timeline .t-body>p{
+	margin-bottom: 0;
+	padding: 10px;
+	font-size: 1rem;
+}
 
 
 
@@ -232,6 +360,15 @@ section.discoverSection .col-right a.card-specilization:hover{
 
 	section.discoverSection .col-8 .btn{
 		font-size: 0.8em;
+	}
+
+	.timeline .t-heading h4{
+		font-size: 0.9rem;
+	}
+
+	.timeline .t-body>ul,
+	.timeline .t-body>p{
+	font-size: 0.9rem;
 	}
 
 
@@ -299,7 +436,7 @@ section.discoverSection .col-right a.card-specilization:hover{
 	#mainNavbar.navbar-mobile{
 		padding-top: 0.2rem;
 		padding-bottom: 0.2rem;
-		background: rgb(0, 0, 0, 0.5);
+		background: rgb(0, 0, 0, 0.7);
 
 	}
 
