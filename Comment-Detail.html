@@ -144,7 +144,7 @@
                                                         </div>
     
                                                         <div class="col-4 d-block align-items-center">
-                                                            <a href="#" class="btn">
+                                                            <a href="#leave-a-comment" class="btn">
                                                                 <i class="bi bi-chat-square-dots"></i>
                                                             </a>
                                                         </div>
@@ -200,7 +200,7 @@
                                                     </div>
 
                                                     <div class="col-4 align-items-center">
-                                                        <a href="#" class="btn">
+                                                        <a href="#leave-a-comment" class="btn">
                                                             <i class="bi bi-chat-square-dots"></i>
                                                         </a>
                                                     </div>
@@ -247,7 +247,7 @@
                                                     </div>
 
                                                     <div class="col-4 align-items-center">
-                                                        <a href="#" class="btn">
+                                                        <a href="#leave-a-comment" class="btn">
                                                             <i class="bi bi-chat-square-dots"></i>
                                                         </a>
                                                     </div>
@@ -293,7 +293,7 @@
                                                         </div>
     
                                                         <div class="col-4 align-items-center">
-                                                            <a href="#" class="btn">
+                                                            <a href="#leave-a-comment" class="btn">
                                                                 <i class="bi bi-chat-square-dots"></i>
                                                             </a>
                                                         </div>
@@ -341,7 +341,7 @@
                                                     </div>
 
                                                     <div class="col-4 align-items-center">
-                                                        <a href="#" class="btn">
+                                                        <a href="#leave-a-comment" class="btn">
                                                             <i class="bi bi-chat-square-dots"></i>
                                                         </a>
                                                     </div>
@@ -370,49 +370,58 @@
 
                                     <div class="card t-comment me-0 p-2">
 
+                                           <div class="row">
+                                                <div class="col-12">
+                                                    
+                                                    <div class="timeline-comment-box">
+                                                            <div class="user">
+                                                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png">
+                                                            </div>
+                                                            <div class="input">
+                                                                <form action="">
 
-                                        <div class="row">
-                                            <div class="col-12">
-                                                
-                                                <div class="timeline-comment-box">
-                                                    <div class="user"><img src="https://bootdey.com/img/Content/avatar/avatar3.png"></div>
-                                                        <div class="input">
-                                                            <form action="">
 
+                                                                    <div class="form-floating" id="leave-a-comment">
 
-                                                                <div class="form-floating">
+                                                                        <textarea class="form-control textare-specialization" spellcheck="false" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                                                        <label for="floatingTextarea">Leave a comment</label>
 
-                                                                    <textarea class="form-control textare-specialization" spellcheck="false" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                                                                    <label for="floatingTextarea">Leave a comment</label>
+                                                                        <div class="row mt-1">
 
-                                                                    <div class="row mt-1">
-                                                                        <div class="col-7">
-                                                                           <div class="float-start collapse" id="imgupload">
-                                                                                <input class="form-control" type="file" id="formFile">
+                                                                            <div class="col-7">
+
+                                                                                <div class="float-start collapse" id="imgupload">
+                                                                                        <input class="form-control" type="file" id="formFile">
+                                                                                </div>
+
                                                                             </div>
-                                                                        </div>
-                                                                        <div class="col-5">
-                                                                            <div class="float-end">
-                                                                            <button type="button" class="btn mx-1" data-bs-toggle="collapse" aria-expanded="false" aria-controls="image upload" data-bs-target="#imgupload"><i class="bi bi-image"></i></button><button type="button" class="btn btn-primary">send</button>
+
+                                                                            <div class="col-5">
+                                                                                <div class="float-end">
+                                                                                    <button type="button" class="btn mx-1" data-bs-toggle="collapse" aria-expanded="false" aria-controls="image upload" data-bs-target="#imgupload"><i class="bi bi-image"></i></button><button type="button" class="btn btn-primary">send</button>
+                                                                                </div>
                                                                             </div>
+
                                                                         </div>
+
                                                                     </div>
 
-                                                                </div>
 
+                                                                </form>
+                                                            </div>
+                                                    </div>
 
-                                                            </form>
-                                                        </div>
-                                                 </div>
-                                              </div>
+                                                </div>
+
+                                               
+
+                                                <div class="col-12">
+                                                    <div class="p-4 bg-warning">
+                                                    If you want to leave a comment, unfortunately you have to be user of this website. So, would you like to <a href="#LModalLogin" data-bs-toggle="modal">login</a> or <a href="">register</a>?
+                                                    </div>
+                                                </div>
 
                                             </div>
-
-                                            <div class="col-12 p-4 mb-0 bg-warning">
-                                                If you want to leave a comment, unfortunately you have to be user of this website. So, would you like to <a href="#LModalLogin" data-bs-toggle="modal">login</a> or <a href="">register</a>?
-                                            </div>
-
-                                        </div>
                                     
         
 
@@ -476,8 +485,11 @@
 
 	<!-- footer ends -->
 
+	
+	
 
-    <!-- üyelik kısmı starts -->
+
+<!-- üyelik kısmı starts -->
 <div class="modal fade log-modal" id="LModalLogin" tabindex="-1" role="dialog" aria-labelledby="myTitle1" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
