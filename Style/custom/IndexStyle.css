@@ -132,6 +132,15 @@ section.discoverSection .col-special .nav-item:first-child{
 	margin-bottom: 0;
 }
 
+.collapse-comment-default:not(.show){
+	display: block;
+	height: 3.5rem;
+	overflow: hidden;
+	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+	font-size: 1rem;
+	margin-bottom: 0;
+}
+
 a.collapsed:link, :active, :hover{
 	text-decoration: none;
 	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
@@ -327,7 +336,7 @@ section.discoverSection .col-right a.card-specilization:hover{
 
 .timeline-comment-box .user {
     float: left;
-    width: 34px;
+    width: 34px;s
     height: 34px;
     overflow: hidden;
     border-radius: 30px
@@ -340,6 +349,16 @@ section.discoverSection .col-right a.card-specilization:hover{
 
 .timeline-comment-box .user+.input {
     margin-left: 44px
+}
+
+.timeline-comment-box .textare-specialization{
+	background-color: #f2f3f4;
+	overflow: hidden;
+}
+
+.timeline-comment-box .textare-specialization:focus{
+	background-color: white;
+	border: 1px solid lightgray;
 }
 
 
