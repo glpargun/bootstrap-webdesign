@@ -355,12 +355,6 @@ section.discoverSection .col-right a.card-specilization:hover{
 	background-color: #f2f3f4;
 }
 
-.timeline-comment-box .textare-specialization:focus{
-	background-color: white;
-	border: 1px solid lightgray;
-	height: 10em;
-}
-
 
 
 /* HEADER MEDIA QUERY */

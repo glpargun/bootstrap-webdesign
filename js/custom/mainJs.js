@@ -28,3 +28,15 @@ for (let i = 0; i < BtnCanvas.length; i++){
 		document.querySelector('[data-bs-dismiss="offcanvas"]').click();
 	});
 }
+
+//expand comment textarea
+function expandTextarea(id) {
+    document.getElementById(id).addEventListener('keyup', function() {
+        this.style.overflow = 'hidden';
+        this.style.height = 0;
+        this.style.height = this.scrollHeight + 'px';
+    }, false);
+}
+
+expandTextarea('floatingTextarea');
+
