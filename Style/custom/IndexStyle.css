@@ -109,16 +109,12 @@ header.bodyPage .container .row p{
 	padding: 2rem 0;
 }
 
-section.discoverSection .container .dis-heading{
+.dis-heading{
 	font-size: 1.1rem;
 }
 
-section.discoverSection .col-special .nav-item{
+section.discoverSection .nav-item{
 	margin-left: 0.3rem;
-}
-
-section.discoverSection .col-special .nav-item:first-child{
-	margin-left: 0;
 }
 
 /** show more part */
@@ -175,7 +171,7 @@ section.discoverSection .d-flex .btn:hover{
 	
 }
 
-section.discoverSection .col-right .group-name{
+.col-right .group-name{
 	font-size: 1rem;
 	color: blue;
 }
@@ -357,6 +353,12 @@ section.discoverSection .col-right a.card-specilization:hover{
 
 .timeline-comment-box .textare-specialization:focus{
 	background-color: white;
+}
+
+/*right side about group font style*/
+.about-website{
+	font-size: 0.9rem;
+	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
 
