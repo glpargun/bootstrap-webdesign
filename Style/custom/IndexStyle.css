@@ -361,6 +361,79 @@ section.discoverSection .col-right a.card-specilization:hover{
 	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
+/*USER-CARD-HEADER PROFIL SAYFASI*/
+
+.user-card-header{
+	background: linear-gradient(45deg,#FFB64D,#ffcb80);
+	height: 45px;
+}
+
+.user-card-header .user-image{
+	position: relative;
+    margin: 0 auto;
+	top: 5px;
+    display: block;
+	background-color: white;
+	width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.user-card-header .user-image img {
+    z-index: 20;
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.user-card-header .user-image:before {
+    bottom: 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.user-card-header .user-image:after, .user-card .card-block .user-image:before {
+    content: "";
+    width: 100%;
+    height: 48%;
+    border: 2px solid #4099ff;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+}
+
+.user-card-header .user-image:after {
+    top: 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.user-card-header .user-image:after, .user-card-header .user-image:before {
+    content: "";
+    width: 100%;
+    height: 48%;
+    border: 2px solid #4099ff;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+}
+
+.card-username{
+	margin-top: 3rem;
+	margin-bottom: 0.5rem;
+	font-weight: 700;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+.card-user-info{
+	text-align: center;
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+
+}
+
 
 
 /* HEADER MEDIA QUERY */
