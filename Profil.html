@@ -403,23 +403,6 @@
                                             
                                             </div>
 
-                                            <div class="tab-pane fade" id="profile-edit" role="tabpanel" aria-labelledby="profile-edit-tab">
-                                            
-
-
-                                                <!-- profile edit starts -->
-
-                                                profil edit buraya
-
-
-                                                <!-- profile edit starts -->
-                
-                                                
-                                            
-                                            </div>
-
-
-
                                             <div class="tab-pane fade" id="activegroup" role="tabpanel" aria-labelledby="activegroup-tab">                                                
 
                                                 <div class="row card-title-specialization">
@@ -539,7 +522,6 @@
                                                 </div>
                                             
                                             </div>
-
 
                                             <div class="tab-pane fade" id="save" role="tabpanel" aria-labelledby="save-tab">
                                               
@@ -685,7 +667,6 @@
 
                                     </div>
                                 </div>
-
                         
                     </div>
                     <!--left bar ends-->
@@ -702,12 +683,8 @@
 
                                                     <!--üyelere özel button starts-->
 
-                                                    <div class="position-absolute m-1">
-                                                        <ul class="nav nav-tabs" id="profile-tabs" role="tablist">
-                                                            <li class="nav-item" role="presentation">
-                                                                <button type="button" class="btn btn-outline-dark profile-btn-specialization me-1" id="profile-edit-tab" data-bs-toggle="tab" data-bs-target="#profile-edit" role="tab" aria-controls="profile-edit" aria-selected="true">Profil Edit</button></li>
-                                                            </ul>
-                                                    </div>
+
+                                                    <a href="#profile-edit"  class="btn btn-outline-dark profile-btn-specialization position-absolute m-1 btn-close-canvas" data-bs-toggle="modal">Profile Edit</a>
                                             
                                                     <!--üyelere özel button starts-->
 
@@ -721,10 +698,12 @@
                                             <div class="card-username">%username</div>
                                             <div class="card-user-info text-muted">%status | Sexuality | %birthday</div>
 
+                                            
+
+                                            <p class="m-2">here the text will be placed that is written by the user. </p>
+
                                         <div class="d-none d-lg-block d-xl-block">
-
-                                                <hr class="text-muted mx-2 mt-3 mb-3">
-
+                                            <hr class="text-muted mx-2 mt-3 mb-3">
                                                 <div class="px-2"> Fan of 
                                                     <a href="#" class="d-inline-flex text-decoration-none rounded-pill mr-1 my-1 bg-primary text-white px-1">Music & Audio</a>
                                                     <a href="#" class="d-inline-flex text-decoration-none rounded-pill mr-1 my-1 bg-primary text-white px-1">Home & Garden</a>
@@ -846,7 +825,72 @@
 	<!-- footer ends -->
 
 	
-	
+<!-- profile-edit kısmı starts -->
+<div class="modal fade log-modal" id="profile-edit" tabindex="-1" role="dialog" aria-labelledby="myTitle2" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		<div class="close-modal mt-1" data-bs-dismiss="modal" aria-label="Kapat">
+			<i class="bi bi-x-circle"></i>
+		</div>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<h2 class="text-uppercase font-weight-bold mt-4" id="myTitle2"> %username </h2>
+					<p class="p-intro text-muted m-1 mb-4">here you can update your informations.</p>
+
+					<form id="FrmLogin" novalidate>
+
+						<div class="row align-items-stretch mb-2">
+							<div class="col-md-12">
+								<div class="form-floating mb-4">
+									<input type="text" id="username" class="form-control" placeholder="Username or E-mail" required>
+									<label for="username">Username or E-mail
+										<span class="text-danger" aria-hidden="true">*</span>
+										<span class="visually-hidden">required unfortunately</span>
+									</label>
+									<div class="invalid-feedback" id="ErrName"></div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-floating mb-4">
+									<input type="password" id="username" class="form-control" placeholder="password" required>
+									<label for="password">Password
+										<span class="text-danger" aria-hidden="true">*</span>
+										<span class="visually-hidden">required unfortunately</span>
+									</label>
+									<div class="invalid-feedback" id="ErrName"></div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="text-center mx-auto">
+									<button type="submit" class="btn btn-primary text-uppercase py-2 mx-3">
+										Let me IN!
+									</button>
+									<div class="btn btn-success text-uppercase py-2">Register</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="divider d-flex align-items-center my-4">
+							<p class="text-center fw-bold mx-3 mb-0">OR</p>
+						  </div>
+
+						<div class="text-center mb-4">if you do not remember password (don't be sad, it could happen), please click <a href="#" class="text-decoration-none">here</a>.</div>
+
+					</form>
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+<!-- profil-edit kısmı ends-->
 
 
 <!-- üyelik kısmı starts -->
