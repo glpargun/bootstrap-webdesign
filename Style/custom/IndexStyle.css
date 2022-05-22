@@ -436,6 +436,8 @@ section.discoverSection .col-right a.card-specilization:hover{
 
 
 
+
+
 /* HEADER MEDIA QUERY */
 
 /* ceptel size css kodları*/
@@ -484,6 +486,11 @@ section.discoverSection .col-right a.card-specilization:hover{
 	.timeline .t-body>ul,
 	.timeline .t-body>p{
 	font-size: 1rem;
+	}
+
+	.profile-btn-specialization{
+		font-size: 0.9rem;
+		font-weight: 600;
 	}
 
 
