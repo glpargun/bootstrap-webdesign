@@ -489,8 +489,17 @@ section.discoverSection .col-right a.card-specilization:hover{
 	}
 
 	.profile-btn-specialization{
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 		font-weight: 600;
+	}
+
+	.card-title-specialization h5{
+		font-size: 1.1rem;
+		font-weight: 600;
+	}
+
+	p{
+		font-size: 0.9rem;
 	}
 
 
