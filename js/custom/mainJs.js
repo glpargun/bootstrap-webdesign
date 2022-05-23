@@ -106,7 +106,12 @@ for (let i = 0; i < BtnCanvas.length; i++){
 		if(myMessage.value.length == 0){
 			myMessage.classList.remove("is-valid");
 			myMessage.classList.add("is-invalid");
-			myError.textContent = "please write something as an explanation";
+			myError.textContent = "you have to give some informations about you, we want to know your style more!";
+			return false;
+		} else if(myMessage.value.length < 20){
+			myMessage.classList.remove("is-valid");
+			myMessage.classList.add("is-invalid");
+			myError.textContent = "Even robots have something to say more than 10 letters!";
 			return false;
 		}else{
 			myMessage.classList.remove("is-invalid");
