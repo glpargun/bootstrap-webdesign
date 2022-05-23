@@ -733,16 +733,16 @@
 
                                                     <p class="my-0 px-2"><i class="bi bi-geo me-1"></i>lives in <a href="">%city</a></p>
                                                     <p class="my-0 px-2"><i class="bi bi-bag me-1"></i>works at <a href=""">%work</a></p>
-                                                    <p class="my-0 px-2"><i class="bi bi-geo-alt me-1"></i>from <a href="">%country</a></p>
 
 
                                                 <hr class="text-muted mx-2 mt-3 mb-2">
 
-                                                <div class="row px-3 mt-3 mx-auto">
-                                                    <button class="btn btn-primary m-1" type="submit">Add a group</button>
-                                                    <button class="btn btn-success m-1" type="submit"> Follow </button>
-                                                </div>
+                                        </div>
 
+                                        <div class="row px-1 mt-3 mx-auto">
+                                            <div class="col-6"><button class="btn btn-outline-primary w-100" type="submit">invite</button></div>
+                                            <div class="col-6"><button class="btn btn-success w-100" type="submit"> Follow </button></div>
+                                            <div class="col-12"><button class="btn btn-primary mt-2 w-100 fw-bold"><i class="bi bi-plus-lg"></i> WHAT YOU THINK TODAY?</button></div>
                                         </div>
 
 
@@ -889,7 +889,63 @@
 
                                 </div>
 
-                                <button class="btn btn-danger" id="btnEdit">SEnd</button>
+                                <div class="col-6">
+
+                                    <div class="form-floating mb-4">
+
+                                        <input type="text" id="birthday" class="form-control" placeholder="birthday" required>
+                                        <label for="birthday">Your Birthday
+                                        </label>
+                                        <div class="invalid-feedback" id="ErrBirth"></div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-6">
+
+                                    <div class="form-floating mb-4">
+
+                                        <select class="form-select" id="sexuality" aria-label="Default select example">
+                                            <option selected>Choose one of them</option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Nothing</option>
+                                            <option value="4">Just Horny</option>
+                                          </select>
+                                          <label for="sexuality">Sexuality</label>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-6">
+
+                                    <div class="form-floating mb-4">
+
+                                        <input type="text" id="city" class="form-control" placeholder="City" required>
+                                        <label for="city">City where you are from
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-6">
+
+                                    <div class="form-floating mb-4">
+
+                                        <input type="text" id="work" class="form-control" placeholder="work" required>
+                                        <label for="work">Your work
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12 mx-auto">
+                                    <button class="btn btn-outline-dark" id="btnEdit">UPDATE</button>
+                                </div>
 
                             </div>
                       </form>
