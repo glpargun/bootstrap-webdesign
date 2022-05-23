@@ -108,7 +108,7 @@
 
                                     <div style="margin-top: 10px;">
                                         <ul class="nav nav-tabs mx-auto border-0" id="profile-tabs" role="tablist">
-                                            <li class="nav-item" role="presentation"><button type="button" class="btn btn-outline-dark profile-btn-specialization me-1 active" id="activity-tab" data-bs-toggle="tab" data-bs-target="#activity" role="tab" aria-controls="activity" aria-selected="true">Activities</button></li>
+                                            <li class="nav-item" role="presentation"><button type="button" class="btn btn-outline-dark profile-btn-specialization me-1 active" id="activity-tab" data-bs-toggle="tab" data-bs-target="#activity" role="tab" aria-controls="activity" aria-selected="true">POSTS</button></li>
                                             <li class="nav-item" role="presentation"><button type="button" class="btn btn-outline-dark profile-btn-specialization me-1" id="answers-tab" data-bs-toggle="tab" data-bs-target="#answers" role="tab" aria-controls="Answers" aria-selected="true">Answers</button></li>
                                             <li class="nav-item" role="presentation"><button type="button" class="btn btn-outline-dark profile-btn-specialization me-1" id="liked-tab" data-bs-toggle="tab" data-bs-target="#liked" role="tab" aria-controls="Liked Entries" aria-selected="true">Liked</button></li>
                                             <li class="nav-item" role="presentation"><button type="button" class="btn btn-outline-dark profile-btn-specialization me-1" id="activegroup-tab" data-bs-toggle="tab" data-bs-target="#activegroup" role="tab" aria-controls="activegroup" aria-selected="true">Groups</button></li>
@@ -852,23 +852,24 @@
                                     <div class="row text-dark text-start">
 
                                         <div class="col-3"> 
-                                            <span id="current-think-character"  class="badge bg-primary text-wrap" style="width: 6rem;">0</span>
+                                            <span id="current-think-character"  class="badge bg-secondary p-1 text-wrap" style="width: 6rem;">0</span>
                                         </div>
 
-                                        <div class="col-6">
+                                        <div class="col-4">
 
-                                            <div class="float-start collapse" id="imgupload">
-                                                    <input class="form-control" width="100%" type="file" id="formFile">
-                                            </div>
+                                           
 
                                         </div>
 
-                                        <div class="col-3 mt-1">
+                                        <div class="col-5 mt-1">
                                             <div class="float-end">
-                                                <button type="button" class="btn" data-bs-toggle="collapse" aria-expanded="false" aria-controls="image upload" data-bs-target="#imgupload">
-                                                    <i class="bi bi-image"></i>
-                                                </button>
-                                                <button class="btn btn-outline-dark" id="btnThink">UPDATE</button>
+
+                                                <label for="postImg">
+                                                    <input type="file" name="postImg" id="postImg" style="display:none;"/>
+                                                    <i class="bi bi-image fw-bold"></i>
+                                                 </label>
+
+                                                <button class="btn btn-outline-primary ms-1" id="btnThink">UPDATE</button>
                                             </div>
                                         </div>
                                         
@@ -941,7 +942,7 @@
 
                                 </div>
 
-                                <div class="col-12">
+                                <div class="col-12 mb-3">
 
                                     <div class="form-floating form-textarea mb-md-0">
                                         <textarea id="message" class="form-control h-50" placeholder="Explain yourself" maxlength="300" required></textarea>
@@ -952,7 +953,7 @@
                                         <div class="invalid-feedback" id="ErrMessage"></div>
                                     </div>
                                     <div class="text-dark text-end">
-                                        <span id="current-character">0</span>
+                                        <span id="current-character" class="fw-bold">0</span>
                                         <span>/ 300</span>
                                     </div>
 
