@@ -41,11 +41,9 @@ for (let i = 0; i < BtnCanvas.length; i++){
 	var myThinkPost = document.querySelector('#btnThink');
 	var myBtn = document.querySelector('#btnEdit');
 
-	if(myMessage.value.length == 0){
+	if(myMessage.value.length == 0 || myThink.value.length == 0 ){
 		myBtn.disabled = true;
-	} else if (myThink.value.length == 0){
-		myThinkPost.disabled =true;
-
+		myThinkPost.disabled = true;
 	}
 
 	const SpacePattern = /^\S*$/;
@@ -155,13 +153,13 @@ for (let i = 0; i < BtnCanvas.length; i++){
 
 	myThink.addEventListener("keyup", function(){
 		document.getElementById("current-think-character").textContent = myThink.value.length;
-		if(myThink.value.length > 0){
-			myThinkPost.disabled = false;
-		} else{
+		if (myThink.value.length == 0) {
 			myThinkPost.disabled = true;
+		} else{
+			myThinkPost.disabled = false;
 		}
+	
 	});
-
 	var myForms = document.querySelector(".needs-validation");
 	myForms.addEventListener("submit", function(e) {
 		if (!myForms.checkValidity() || 
