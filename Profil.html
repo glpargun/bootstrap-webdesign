@@ -146,9 +146,9 @@
                                                                                 <i class="bi bi-three-dots mx-2 mr-0"></i>
                                                                             </div>
                                                                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                                                    <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-square me-1"></i>Edit</a></li>
-                                                                                    <li><a class="dropdown-item" href="#"><i class="bi bi-trash me-1"></i>Delete</a></li>
-                                                                                    <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-question-octagon me-1"></i>Report</a></li>
+                                                                                    <li><a class="dropdown-item" href="#"><strong><i class="bi bi-pencil-square me-1"></i></strong>Edit</a></li>
+                                                                                    <li><a class="dropdown-item" href="#"><strong><i class="bi bi-trash me-1"></i></strong>Delete</a></li>
+                                                                                    <li><a class="dropdown-item text-danger" href="#"><strong><i class="bi bi-question-octagon me-1"></i></strong>Report</a></li>
                                                                                 </ul>
                                                                         </div>
                                                                     
@@ -211,9 +211,9 @@
                                                                                     <i class="bi bi-three-dots mx-2 mr-0"></i>
                                                                                 </div>
                                                                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                                                        <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-square me-1"></i>Edit</a></li>
-                                                                                        <li><a class="dropdown-item" href="#"><i class="bi bi-trash me-1"></i>Delete</a></li>
-                                                                                        <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-question-octagon me-1"></i>Report</a></li>
+                                                                                        <li><a class="dropdown-item" href="#"><strong><i class="bi bi-pencil-square me-1"></i></strong>Edit</a></li>
+                                                                                        <li><a class="dropdown-item" href="#"><strong><i class="bi bi-trash me-1"></i></strong>Delete</a></li>
+                                                                                        <li><a class="dropdown-item text-danger" href="#"><strong><i class="bi bi-question-octagon me-1"></i></strong>Report</a></li>
                                                                                     </ul>
                                                                             </div>
                                                                         
@@ -284,9 +284,9 @@
                                                                                 <i class="bi bi-three-dots mx-2 mr-0"></i>
                                                                             </div>
                                                                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                                                    <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-square me-1"></i>Edit</a></li>
-                                                                                    <li><a class="dropdown-item" href="#"><i class="bi bi-trash me-1"></i>Delete</a></li>
-                                                                                    <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-question-octagon me-1"></i>Report</a></li>
+                                                                                    <li><a class="dropdown-item" href="#"><strong><i class="bi bi-pencil-square me-1"></i></strong>Edit</a></li>
+                                                                                    <li><a class="dropdown-item" href="#"><strong><i class="bi bi-trash me-1"></i></strong>Delete</a></li>
+                                                                                    <li><a class="dropdown-item text-danger" href="#"><strong><i class="bi bi-question-octagon me-1"></i></strong>Report</a></li>
                                                                                 </ul>
                                                                         </div>
                                                                     
@@ -354,9 +354,9 @@
                                                                                 <i class="bi bi-three-dots mx-2 mr-0"></i>
                                                                             </div>
                                                                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                                                    <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-square me-1"></i>Edit</a></li>
-                                                                                    <li><a class="dropdown-item" href="#"><i class="bi bi-trash me-1"></i>Delete</a></li>
-                                                                                    <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-question-octagon me-1"></i>Report</a></li>
+                                                                                    <li><a class="dropdown-item" href="#"><strong><i class="bi bi-pencil-square me-1"></i></strong>Edit</a></li>
+                                                                                    <li><a class="dropdown-item" href="#"><strong><i class="bi bi-trash me-1"></i></strong>Delete</a></li>
+                                                                                    <li><a class="dropdown-item text-danger" href="#"><strong><i class="bi bi-question-octagon me-1"></i></strong>Report</a></li>
                                                                                 </ul>
                                                                         </div>
                                                                     
@@ -684,7 +684,7 @@
                                                     <!--üyelere özel button starts-->
 
 
-                                                    <a href="#profile-edit"  class="btn btn-outline-dark profile-btn-specialization position-absolute m-1 btn-close-canvas" data-bs-toggle="modal">Profile Edit</a>
+                                                    <a href="#profile-edit"  class="btn btn-outline-dark profile-btn-specialization position-absolute m-1 btn-close-canvas" data-bs-toggle="modal">Edit profil</a>
                                             
                                                     <!--üyelere özel button starts-->
 
@@ -826,67 +826,84 @@
 
 	
 <!-- profile-edit kısmı starts -->
-<div class="modal fade log-modal" id="profile-edit" tabindex="-1" role="dialog" aria-labelledby="myTitle2" aria-hidden="true">
+<div class="modal fade profile-edit-modal" id="profile-edit" tabindex="-1" role="dialog" aria-labelledby="myTitle2" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
-		<div class="close-modal mt-1" data-bs-dismiss="modal" aria-label="Kapat">
-			<i class="bi bi-x-circle"></i>
-		</div>
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<h2 class="text-uppercase font-weight-bold mt-4" id="myTitle2"> %username </h2>
-					<p class="p-intro text-muted m-1 mb-4">here you can update your informations.</p>
+                <div class="close-modal mt-1" data-bs-dismiss="modal" aria-label="Kapat">
+                    <i class="bi bi-x-circle"></i>
+                </div>
+            <div class="container">
+                <div class="row justify-content-center mb-4">
+                    <div class="col-lg-12">
+                        <h5 class="text-uppercase font-weight-bold mt-4 mb-0" id="myTitle2"> %username, </h5>
+                        <p class="p-intro text-muted mx-1 mt-0 mb-3">here you can update your informations.</p>
 
-					<form id="FrmLogin" novalidate>
+                 
+                        <form class="needs-validation" action="profile-edit.php" id="formEdit" novalidate>
+                            <div class="row align-items-stretch mb-2">
 
-						<div class="row align-items-stretch mb-2">
-							<div class="col-md-12">
-								<div class="form-floating mb-4">
-									<input type="text" id="username" class="form-control" placeholder="Username or E-mail" required>
-									<label for="username">Username or E-mail
-										<span class="text-danger" aria-hidden="true">*</span>
-										<span class="visually-hidden">required unfortunately</span>
-									</label>
-									<div class="invalid-feedback" id="ErrName"></div>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-floating mb-4">
-									<input type="password" id="username" class="form-control" placeholder="password" required>
-									<label for="password">Password
-										<span class="text-danger" aria-hidden="true">*</span>
-										<span class="visually-hidden">required unfortunately</span>
-									</label>
-									<div class="invalid-feedback" id="ErrName"></div>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="text-center mx-auto">
-									<button type="submit" class="btn btn-primary text-uppercase py-2 mx-3">
-										Let me IN!
-									</button>
-									<div class="btn btn-success text-uppercase py-2">Register</div>
-								</div>
-							</div>
-						</div>
+                                <div class="col-6">
+                                    
+                                    <div class="form-floating mb-4">
 
-						<div class="divider d-flex align-items-center my-4">
-							<p class="text-center fw-bold mx-3 mb-0">OR</p>
-						  </div>
+                                        <input type="text" id="name" class="form-control" placeholder="username" maxlength="40" aria-describedby="ErrName" required>
+                                        <label for="name">Username
+                                            <span class="text-danger" aria-hidden="true">*</span>
+                                            <span class="visually-hidden">required</span>
+                                        </label>
+                                        <div class="invalid-feedback" id="ErrName"></div>
 
-						<div class="text-center mb-4">if you do not remember password (don't be sad, it could happen), please click <a href="#" class="text-decoration-none">here</a>.</div>
+                                    </div>
+                                                                        
+                                </div>
 
-					</form>
+                                <div class="col-6">
+
+                                    <div class="form-floating mb-4">
+
+                                        <input type="text" id="email" class="form-control" placeholder="E-mail" required>
+                                        <label for="e-mail">E-mail
+                                            <span class="text-danger" aria-hidden="true">*</span>
+                                            <span class="visually-hidden">required</span>
+                                        </label>
+                                        <div class="invalid-feedback" id="ErrEmail"></div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12">
+
+                                    <div class="form-floating form-textarea mb-md-0">
+                                        <textarea id="message" class="form-control h-50" placeholder="Explain yourself" maxlength="300" required></textarea>
+                                        <label for="message">Explain yourself
+                                            <span class="text-danger" aria-hidden="true">*</span>
+                                            <span class="visually-hidden">required</span>
+                                        </label>
+                                        <div class="invalid-feedback" id="ErrMessage"></div>
+                                    </div>
+                                    <div class="text-dark text-end">
+                                        <span id="current-character">0</span>
+                                        <span>/ 300</span>
+                                    </div>
+
+                                </div>
+
+                                <button class="btn btn-danger" id="btnEdit">SEnd</button>
+
+                            </div>
+                      </form>
+
+                
 
 
 
 
 
-				</div>
-			</div>
-		</div>
-	</div>
+                    </div>
+                </div>
+            </div>
+	    </div>
 	</div>
 </div>
 

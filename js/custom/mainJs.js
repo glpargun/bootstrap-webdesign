@@ -29,14 +29,112 @@ for (let i = 0; i < BtnCanvas.length; i++){
 	});
 }
 
-//expand comment textarea
-function expandTextarea(id) {
-    document.getElementById(id).addEventListener('keyup', function() {
-        this.style.overflow = 'hidden';
-        this.style.height = 0;
-        this.style.height = this.scrollHeight + 'px';
-    }, false);
-}
+//edit-profile security check!
 
-expandTextarea('floatingTextarea');
+(function (){ 
 
+	'use strict'
+	var myName = document.querySelector('#name');
+	var myEmail = document.querySelector('#email');
+	var myMessage = document.querySelector('#message');
+	var myBtn = document.querySelector('#btnEdit');
+
+	if(myMessage.value.length == 0){
+		myBtn.disabled = true;
+	}
+
+	const SpacePattern = /^\S*$/;
+	const EmailPattern = /^([a-zA-Z0-9_\-?\.?]){3,}@([a-zA-Z]){3,}\.([a-zA-Z]){2,5}$/;
+
+	myName.addEventListener("blur", controlName);
+	myEmail.addEventListener("blur", controlEmail);
+	myMessage.addEventListener("blur", controlMessage);
+
+	function controlName(){
+		var myError = document.querySelector("#ErrName");
+		if(myName.value.length == 0){
+			myName.classList.remove("is-valid");
+			myName.classList.add("is-invalid");
+			myError.textContent = "please write something as an username";
+			return false;
+		} else if(myName.value.length < 3){
+			myName.classList.remove("is-valid");
+			myName.classList.add("is-invalid");
+			myError.textContent = "how can an username be less than 3 letters?";
+			return false;
+		} else if(myName.value.length > 35){
+			myName.classList.remove("is-valid");
+			myName.classList.add("is-invalid");
+			myError.textContent = "wow, you wanna have an username more than 35 letters?";
+			return false;
+		} else{
+			myName.classList.remove("is-invalid");
+			myName.classList.add("is-valid");
+			return true;
+		}
+
+
+	}
+
+	function controlEmail(){
+		var myError = document.querySelector("#ErrEmail");
+		if(myEmail.value.length == 0){
+			myEmail.classList.remove("is-valid");
+			myEmail.classList.add("is-invalid");
+			myError.textContent = "please write something as an e-mail";
+			return false;
+		} else if (!SpacePattern.test(myEmail.value)){
+			myEmail.classList.remove("is-valid");
+			myEmail.classList.add("is-invalid");
+			myError.textContent = "OooOOoops! Space cannot be used for email."
+			return false;
+		} 	else if (!EmailPattern.test(myEmail.value)){
+			myEmail.classList.remove("is-valid");
+			myEmail.classList.add("is-invalid");
+			myError.textContent = "Email format is not correct, check it please!"
+			return false;
+		} else{
+			myName.classList.remove("is-invalid");
+			myName.classList.add("is-valid");
+			return true;
+		}
+		
+	}
+
+	function controlMessage(){
+		var myError = document.querySelector("#ErrMessage");
+		if(myMessage.value.length == 0){
+			myMessage.classList.remove("is-valid");
+			myMessage.classList.add("is-invalid");
+			myError.textContent = "please write something as an explanation";
+			return false;
+		}else{
+			myMessage.classList.remove("is-invalid");
+			myMessage.classList.add("is-valid");
+			return true;
+		}
+		
+	}
+
+
+	myMessage.addEventListener("keyup", function(){
+		document.getElementById("current-character").textContent = myMessage.value.length;
+		if (myMessage.value.length >= 10) {
+			myBtn.disabled = false;
+		} else{
+			myBtn.disabled = true;
+		}
+	});
+
+	var myForms = document.querySelector(".needs-validation");
+	myForms.addEventListener("submit", function(e) {
+		if (!myForms.checkValidity() || 
+			!controlName() ||
+			!controlEmail ||
+			!controlMessage){
+			e.preventDefault();
+			e.stopPropagation();
+		}
+	}, false);
+
+})();

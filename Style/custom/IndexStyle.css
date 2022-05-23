@@ -104,6 +104,35 @@ header.bodyPage .container .row p{
 	opacity: 0.5;
 }
 
+
+/*profile edit part*/
+
+.profile-edit-modal .modal-dialog{
+	margin: 1rem auto;
+}
+
+.profile-edit-modal .modal-content h2{
+	font-size: 1.5rem;
+}
+
+.profile-edit-modal .modal-content .p-intro{
+	font-family:  system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+	
+}
+
+.profile-edit-modal .close-modal{
+	position: absolute;
+	top:  0.1rem;
+	right: 0.8rem;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.profile-edit-modal .close-modal:hover{
+	opacity: 0.5;
+}
+
+
 /* Discover start */
 .discoverSection{
 	padding: 2rem 0;
@@ -469,6 +498,10 @@ section.discoverSection .col-right a.card-specilization:hover{
 		max-width:90vw;
 	}
 
+	.profile-edit-modal .modal-dialog{
+		max-width:90vw;
+	}
+
 	section.discoverSection .col-8{
 		width: 91.5vw;
 		margin: auto;
@@ -577,6 +610,10 @@ section.discoverSection .col-right a.card-specilization:hover{
 
 	section.discoverSection .col-lg-8{
 		padding: 0.5rem 0;
+	}
+
+	.profile-edit-modal .modal-dialog{
+		max-width: 40vw;
 	}
 
 }
