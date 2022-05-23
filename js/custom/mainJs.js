@@ -94,8 +94,8 @@ for (let i = 0; i < BtnCanvas.length; i++){
 			myError.textContent = "Email format is not correct, check it please!"
 			return false;
 		} else{
-			myName.classList.remove("is-invalid");
-			myName.classList.add("is-valid");
+			myEmail.classList.remove("is-invalid");
+			myEmail.classList.add("is-valid");
 			return true;
 		}
 		
