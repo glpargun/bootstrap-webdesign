@@ -742,7 +742,7 @@
                                         <div class="row px-1 mt-3 mx-auto">
                                             <div class="col-6"><button class="btn btn-outline-primary w-100" type="submit">invite</button></div>
                                             <div class="col-6"><button class="btn btn-success w-100" type="submit"> Follow </button></div>
-                                            <div class="col-12"><button class="btn btn-primary mt-2 w-100 fw-bold"><i class="bi bi-plus-lg"></i> WHAT YOU THINK TODAY?</button></div>
+                                            <div class="col-12"> <a href="#what-do-you-think"  class="btn btn-primary fw-bold profile-btn-specialization w-100 mt-2 btn-close-canvas" data-bs-toggle="modal">WHAT DO YOU THINK?</a></div>
                                         </div>
 
 
@@ -824,6 +824,54 @@
 
 	<!-- footer ends -->
 
+
+<!-- what do you think kısmı starts -->
+<div class="modal fade profile-edit-modal" id="what-do-you-think" tabindex="-1" role="dialog" aria-labelledby="myTitle3" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content bg-light">
+            <div class="close-modal mt-1" data-bs-dismiss="modal" aria-label="Kapat">
+                <i class="bi bi-x-circle"></i>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center mb-4">
+                    <div class="col-lg-12">
+                        <h5 class="text-uppercase font-weight-bold mt-4 mb-0" id="myTitle2"></h5>
+                        <p class="p-intro text-muted mx-1 mt-0 mb-3"></p>
+
+                        <form class="needs-validation" action="profile-edit.php" id="formwhatyouthink" novalidate>
+
+                            <div class="row">
+                                <div class="col-12 mt-2">
+                                    
+
+                                    <div class="form-floating form-textarea">
+                                        <textarea id="yourthink" class="form-control h-75" placeholder="What do you think today?" maxlength="300" required></textarea>
+                                        <label for="yourthink">What you think today?</label>
+                                        <div class="invalid-feedback" id="ErrThink"></div>
+                                    </div>
+                                    <div class="text-dark text-end">
+                                        <button id="btnThink" class="btn btn-outline-primary mt-2">POST <span id="current-think-character">0</span> CHARACTERS</button>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+
+                        </form>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+	    </div>
+	</div>
+</div>
+
+<!-- what do you think kısmı ends-->
 	
 <!-- profile-edit kısmı starts -->
 <div class="modal fade profile-edit-modal" id="profile-edit" tabindex="-1" role="dialog" aria-labelledby="myTitle2" aria-hidden="true">
@@ -949,12 +997,6 @@
 
                             </div>
                       </form>
-
-                
-
-
-
-
 
                     </div>
                 </div>

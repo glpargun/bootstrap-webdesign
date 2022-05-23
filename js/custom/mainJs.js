@@ -37,10 +37,15 @@ for (let i = 0; i < BtnCanvas.length; i++){
 	var myName = document.querySelector('#name');
 	var myEmail = document.querySelector('#email');
 	var myMessage = document.querySelector('#message');
+	var myThink = document.querySelector('#yourthink');
+	var myThinkPost = document.querySelector('#btnThink');
 	var myBtn = document.querySelector('#btnEdit');
 
 	if(myMessage.value.length == 0){
 		myBtn.disabled = true;
+	} else if (myThink.value.length == 0){
+		myThinkPost.disabled =true;
+
 	}
 
 	const SpacePattern = /^\S*$/;
@@ -49,6 +54,7 @@ for (let i = 0; i < BtnCanvas.length; i++){
 	myName.addEventListener("blur", controlName);
 	myEmail.addEventListener("blur", controlEmail);
 	myMessage.addEventListener("blur", controlMessage);
+	myThink.addEventListener("blur", controlThink);
 
 	function controlName(){
 		var myError = document.querySelector("#ErrName");
@@ -121,6 +127,21 @@ for (let i = 0; i < BtnCanvas.length; i++){
 		
 	}
 
+	function controlThink(){
+		var myError = document.querySelector("#ErrThink");
+		if(myThink.value.length == 0){
+			myThink.classList.remove("is-valid");
+			myThink.classList.add("is-invalid");
+			myError.textContent = "Don't you wanna share anything, because it seems nothing you wrote!";
+			return false;
+		}else{
+			myThink.classList.remove("is-invalid");
+			myThink.classList.add("is-valid");
+			return true;
+		}
+		
+	}
+
 
 	myMessage.addEventListener("keyup", function(){
 		document.getElementById("current-character").textContent = myMessage.value.length;
@@ -128,6 +149,16 @@ for (let i = 0; i < BtnCanvas.length; i++){
 			myBtn.disabled = false;
 		} else{
 			myBtn.disabled = true;
+		}
+	
+	});
+
+	myThink.addEventListener("keyup", function(){
+		document.getElementById("current-think-character").textContent = myThink.value.length;
+		if(myThink.value.length > 0){
+			myThinkPost.disabled = false;
+		} else{
+			myThinkPost.disabled = true;
 		}
 	});
 
