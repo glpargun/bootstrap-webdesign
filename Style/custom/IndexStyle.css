@@ -484,6 +484,11 @@ section.discoverSection .col-right a.card-specilization:hover{
 	color: gray;
   }
 
+  .group-card-specification{
+	width: 75%;
+}
+
+
 
 
 
@@ -557,6 +562,11 @@ section.discoverSection .col-right a.card-specilization:hover{
 	}
 
 	.group-top-specification{
+		font-size: 0.8rem;
+	}
+
+	.group-card-specification{
+		width: 100%;
 		font-size: 0.8rem;
 	}
 
