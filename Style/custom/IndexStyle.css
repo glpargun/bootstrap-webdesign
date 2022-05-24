@@ -464,6 +464,26 @@ section.discoverSection .col-right a.card-specilization:hover{
 
 }
 
+.textarea-comment-detail {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	resize: both;
+	min-height: 40px;
+	line-height: 20px;
+	padding-left: 5px;
+	padding-top: 5px;
+	border: 1px solid lightslategray;
+	background-color: white;
+  }
+  
+  .textarea-comment-detail[contenteditable]:empty::before {
+	content: "your comment...";
+	padding-left: 3px;
+	padding-top: 5px;
+	color: gray;
+  }
+
 
 
 

@@ -173,5 +173,15 @@ for (let i = 0; i < BtnCanvas.length; i++){
 
 })();
 
+// Dealing with Textarea Height
+function calcHeight(value) {
+  let numberOfLineBreaks = (value.match(/\n/g) || []).length;
+  // min-height + lines x line-height + padding + border
+  let newHeight = 20 + numberOfLineBreaks * 20 + 30 + 1;
+  return newHeight;
+}
 
-//datepicker
+let textarea = document.querySelector(".resize-ta");
+textarea.addEventListener("keyup", () => {
+  textarea.style.height = calcHeight(textarea.value) + "px";
+});
