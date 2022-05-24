@@ -36,7 +36,7 @@
 				<ul class="navbar-nav ms-auto text-uppercase  py-lg-2">
 					<li class="nav-item"><a href="#page-body" class="nav-link btn-close-canvas">HOME</a></li>
 					<li class="nav-item"><a href="#create-group"  class="nav-link btn-close-canvas">Create a group</a></li>
-					<li class="nav-item"><a href="#discover"  class="nav-link btn-close-canvas">Discover</a></li>
+					<li class="nav-item"><a href="Categories.html#kategori-dokum"  class="nav-link btn-close-canvas">Discover</a></li>
 					<li class="nav-item"><a href="#about-us"  class="nav-link btn-close-canvas">About us</a></li>
 					<li class="nav-item"><a href="#register"  class="nav-link btn-close-canvas">Register</a></li>
 					<li class="nav-item"><a href="#LModalLogin"  class="nav-link btn-close-canvas" data-bs-toggle="modal">Login</a></li>					
@@ -611,72 +611,68 @@
 	
 
 
-<!-- üyelik kısmı starts -->
-<div class="modal fade log-modal" id="LModalLogin" tabindex="-1" role="dialog" aria-labelledby="myTitle1" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-		<div class="close-modal mt-1" data-bs-dismiss="modal" aria-label="Kapat">
-			<i class="bi bi-x-circle"></i>
-		</div>
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8">
-					<h2 class="text-uppercase font-weight-bold mt-4" id="myTitle1"> Nice to see you here,</h2>
-					<p class="p-intro text-muted mb-4">Log-in and start to share your thoughts.</p>
+	<!-- üyelik kısmı starts -->
+	<div class="modal fade log-modal" id="LModalLogin" tabindex="-1" role="dialog" aria-labelledby="myTitle1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			<div class="close-modal mt-1" data-bs-dismiss="modal" aria-label="Kapat">
+				<i class="bi bi-x-circle"></i>
+			</div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<h2 class="text-uppercase font-weight-bold mt-4" id="myTitle1"> Nice to see you here,</h2>
+						<p class="p-intro text-muted mb-4">Log-in and start to share your thoughts.</p>
 
-					<form id="FrmLogin" novalidate>
+						<form id="FrmLogin" novalidate>
 
-						<div class="row align-items-stretch mb-2">
-							<div class="col-md-12">
-								<div class="form-floating mb-4">
-									<input type="text" id="username" class="form-control" placeholder="Username or E-mail" required>
-									<label for="username">Username or E-mail
-										<span class="text-danger" aria-hidden="true">*</span>
-										<span class="visually-hidden">required unfortunately</span>
-									</label>
-									<div class="invalid-feedback" id="ErrName"></div>
+							<div class="row align-items-stretch mb-2">
+								<div class="col-md-12">
+									<div class="form-floating mb-4">
+										<input type="text" id="username" class="form-control" placeholder="Username or E-mail" required>
+										<label for="username">Username or E-mail
+											<span class="text-danger" aria-hidden="true">*</span>
+											<span class="visually-hidden">required unfortunately</span>
+										</label>
+										<div class="invalid-feedback" id="ErrName"></div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-floating mb-4">
+										<input type="password" id="username" class="form-control" placeholder="password" required>
+										<label for="password">Password
+											<span class="text-danger" aria-hidden="true">*</span>
+											<span class="visually-hidden">required unfortunately</span>
+										</label>
+										<div class="invalid-feedback" id="ErrName"></div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="text-center mx-auto">
+										<button type="submit" class="btn btn-primary text-uppercase py-2 mx-3">
+											Let me IN!
+										</button>
+										<div class="btn btn-success text-uppercase py-2">Register</div>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-12">
-								<div class="form-floating mb-4">
-									<input type="password" id="username" class="form-control" placeholder="password" required>
-									<label for="password">Password
-										<span class="text-danger" aria-hidden="true">*</span>
-										<span class="visually-hidden">required unfortunately</span>
-									</label>
-									<div class="invalid-feedback" id="ErrName"></div>
-								</div>
+
+							<div class="divider d-flex align-items-center my-4">
+								<p class="text-center fw-bold mx-3 mb-0">OR</p>
 							</div>
-							<div class="col-md-12">
-								<div class="text-center mx-auto">
-									<button type="submit" class="btn btn-primary text-uppercase py-2 mx-3">
-										Let me IN!
-									</button>
-									<div class="btn btn-success text-uppercase py-2">Register</div>
-								</div>
-							</div>
-						</div>
 
-						<div class="divider d-flex align-items-center my-4">
-							<p class="text-center fw-bold mx-3 mb-0">OR</p>
-						  </div>
+							<div class="text-center mb-4">if you do not remember password (don't be sad, it could happen), please click <a href="#" class="text-decoration-none">here</a>.</div>
 
-						<div class="text-center mb-4">if you do not remember password (don't be sad, it could happen), please click <a href="#" class="text-decoration-none">here</a>.</div>
+						</form>
 
-					</form>
-
-
-
-
-
+					</div>
 				</div>
 			</div>
 		</div>
+		</div>
 	</div>
-	</div>
-</div>
 
-<!-- üyelik kısmı ends-->
+	<!-- üyelik kısmı ends-->
 
 	<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="js/custom/mainJs.js"></script>
