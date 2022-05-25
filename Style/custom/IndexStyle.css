@@ -361,10 +361,10 @@ section.discoverSection .col-right a.card-specilization:hover{
 
 .timeline-comment-box .user {
     float: left;
-    width: 34px;s
+    width: 34px;
     height: 34px;
     overflow: hidden;
-    border-radius: 30px
+    border-radius: 30px;
 }
 
 .timeline-comment-box .user img {
