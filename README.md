@@ -6,5 +6,4 @@ Login, registration, posts, category, profil and group pages designed using Boot
 
 *SAYTOMEHELLO* is stylish, responsive discussion board that can be used without borders. This board contains homepage, discover page, register and login, profil and profil edit page, chat page and more content sections.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/22591738/170169948-d74f40f0-c706-4020-b375-eac3aeb39535.PNG"></p>
-![group-page](https://user-images.githubusercontent.com/22591738/170170351-a7cfe36e-4b07-4bde-81c2-411ab477672e.PNG)
+<p align="center"><img src="https://user-images.githubusercontent.com/22591738/170170351-a7cfe36e-4b07-4bde-81c2-411ab477672e.PNG"></p>
