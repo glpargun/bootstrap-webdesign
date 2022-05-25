@@ -1,3 +1,7 @@
-# social
-1. here the goal is using bootstrap v.5.2 and creating an interactive/user-friendly/as simple as possible website template.
-2. currently index.html is coding and some pop-ups are done. In the next steps, a design will be featured in which people can form groups and share in the fields they are interested in through these groups. 
+## SAYTOMEHELLO - create a group, share your thoughts without borders.
+Simple discussion forum designed with HTML, CSS and Bootstrap 5.1.3.
+
+## Introduction
+Login, registration, posts, category, profil and group pages designed using Bootstrap, and input forms can be checked thanks to javascript. Also users can easily enter comments, chat with their group members with interactive textareas. 
+
+*SAYTOMEHELLO* is stylish, responsive discussion board that can be used without borders. This board contains homepage, discover page, register and login, profil and profil edit page, chat page and more content sections.
