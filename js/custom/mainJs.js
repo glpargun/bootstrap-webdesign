@@ -35,13 +35,15 @@ for (let i = 0; i < BtnCanvas.length; i++){
 
 	'use strict'
 	var myName = document.querySelector('#name');
+	var myRegisterName = document.querySelector('#registerName');
 	var myEmail = document.querySelector('#email');
 	var myMessage = document.querySelector('#message');
 	var myThink = document.querySelector('#yourthink');
 	var myThinkPost = document.querySelector('#btnThink');
 	var myBtn = document.querySelector('#btnEdit');
+	var myRegisterBtn = document.querySelector('#btnRegister');
 
-	if(myMessage.value.length == 0 || myThink.value.length == 0 ){
+	if(myMessage.value.length == 0 || myThink.value.length == 0){
 		myBtn.disabled = true;
 		myThinkPost.disabled = true;
 	}
@@ -160,6 +162,8 @@ for (let i = 0; i < BtnCanvas.length; i++){
 		}
 	
 	});
+	
+
 	var myForms = document.querySelector(".needs-validation");
 	myForms.addEventListener("submit", function(e) {
 		if (!myForms.checkValidity() || 
